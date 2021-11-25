@@ -2,8 +2,8 @@ body {
   margin: 0;
 }
 
-/* Navbar */
-.flex-Nav {
+/*Header Containing Nav Menu*/
+.flex-Header {
   display: flex;
   justify-content: space-between;
   background: #3c3a39;
@@ -14,35 +14,43 @@ body {
   right: 0;
 }
 
-.nav-Button {
-  background-color: #3c3a39;
-  border: 0;
+.flex-Header .header-Nav {
   width: 14px;
   flex-basis: 40px;
   padding: 8px;
   border-radius: 8px;
 }
 
-.nav-Button:hover {
+.header-Nav .nav-Button {
+  background-color: #3c3a39;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.header-Nav .nav-Button:hover {
   background-color: black;
 }
 
 .header-Name {
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
-  padding: 10px 12px;
+  padding: 11px 12px;
   margin: 0;
 }
 
-/* headline section */
+/* Headline section */
 #headline {
   margin: 44px 0 0;
-  height: 590px;
+  min-height: 590px;
+  padding-top: 2%;
+  padding-bottom: 2%;
   display: flex;
-  background: black url(images/Illustration-header.svg) 120px 120px no-repeat;
-  background-size: cover;
+  background: #1C1A19 url(images/Illustration-header.svg) 240px 180px no-repeat;
+  background-size: 150% 100%;
   align-items: center;
 }
 
@@ -85,7 +93,7 @@ body {
 }
 
 .headline-Links {
-  width: 40%;
+  padding: 0px;
   list-style: none;
   color: white;
   display: flex;
@@ -95,5 +103,5 @@ body {
 }
 
 .headline-Links li {
-  flex: 0 1 50%;
+  flex: 0 1 15%;
 }
