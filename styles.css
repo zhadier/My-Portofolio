@@ -109,20 +109,22 @@ body {
 /* Works Section */
 #Works {
   display: grid;
-  padding: 80px 5% 80px 5%;
-  grid-template: 0.45fr 1.47fr repeat(6, 1fr) / 100%;
+  padding: 100px 5% 80px 5%;
+  grid-template: 0.25fr 1.47fr repeat(6, 0.95fr) / 100%;
   gap: 0 5px;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.works-Title {
+.works-Title h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   text-align: center;
-  line-height: 100px;
+  line-height: 52px;
+  margin-top: 0;
+  margin-bottom: 30px;
   color: #1c1a19;
   justify-content: center;
 }
@@ -142,14 +144,14 @@ body {
   padding-bottom: 10px;
 }
 
-.project-Header {
+.project-Head {
   display: flex;
   padding: 60px 0 0 15px;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.project-Header h1 {
+.project-Head h1 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -159,7 +161,7 @@ body {
   margin-bottom: 0;
 }
 
-.project-Header p {
+.project-Head p {
   padding-right: 10%;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -215,7 +217,7 @@ body {
   padding-right: 3%;
 }
 
-.project1 .project-Header {
+.project1 .project-Head {
   padding-left: 0;
 }
 
@@ -265,16 +267,18 @@ body {
   background-color: #1c1a19;
   display: grid;
   grid-template: 2fr 0.5fr repeat(3, 1fr) /100%;
-  padding: 80px 5% 60px 5%;
+  padding: 80px 0 60px 0;
 }
 
-.aboutme-Header {
+.aboutme-Head {
   display: flex;
   flex-direction: column;
   background: url("images/aboutMe-BG.svg") right bottom no-repeat;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.aboutme-Header h1 {
+.aboutme-Head h1 {
   margin-bottom: 0;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -285,7 +289,7 @@ body {
   color: #ff6b00;
 }
 
-.aboutme-Header p {
+.aboutme-Head p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -319,8 +323,17 @@ body {
 }
 
 #AboutMe hr {
-  width: 95%;
+  width: 90%;
   height: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Languages,
+.Frameworks,
+.Skills {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .abouth3 {
