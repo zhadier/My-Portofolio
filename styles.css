@@ -105,3 +105,282 @@ body {
 .headline-Links li {
   flex: 0 1 15%;
 }
+
+/* Works Section */
+#Works {
+  display: grid;
+  padding: 100px 5% 80px 5%;
+  grid-template: 0.25fr 1.47fr repeat(6, 0.95fr) / 100%;
+  gap: 0 5px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.works-Title h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  line-height: 52px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #1c1a19;
+  justify-content: center;
+}
+
+.card {
+  background: url(images/proj-img.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project1 {
+  background-image: none;
+  padding-bottom: 10px;
+}
+
+.project-Head {
+  display: flex;
+  padding: 60px 0 0 15px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project-Head h1 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.project-Head p {
+  padding-right: 10%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.program-Link {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px 10px 12px;
+  text-decoration: none;
+}
+
+.project-Button {
+  margin-left: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #ff6b00;
+  height: 48px;
+  border: 0;
+}
+
+.project-Button:hover {
+  background-color: blueviolet;
+  border: 3px solid black;
+}
+
+.card ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.card li {
+  padding-right: 3%;
+}
+
+.project1 .project-Head {
+  padding-left: 0;
+}
+
+.project1 ul {
+  padding-left: 0;
+  padding-bottom: 5px;
+}
+
+.project1 h1 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.project1 p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 0;
+  color: #091e42;
+}
+
+.project1 .program-Link {
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  background: #fff;
+  padding: 10px 12px 10px 12px;
+  text-decoration: none;
+}
+
+.project1 .project-Button {
+  width: 120px;
+}
+
+/* About Me Section */
+#AboutMe {
+  background-color: #1c1a19;
+  display: grid;
+  grid-template: 2fr 0.5fr repeat(3, 1fr) /100%;
+  padding: 80px 0 60px 0;
+}
+
+.aboutme-Head {
+  display: flex;
+  flex-direction: column;
+  background: url("images/aboutMe-BG.svg") right bottom no-repeat;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.aboutme-Head h1 {
+  margin-bottom: 0;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.aboutme-Head p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 3%;
+  color: #f4f5f7;
+}
+
+.get-Resume-Button {
+  margin-left: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #ff6b00;
+  height: 48px;
+  border: 0;
+  width: 170px;
+}
+
+.get-Resume-Button:hover {
+  background-color: blueviolet;
+  border: 3px solid black;
+}
+
+#AboutMe hr {
+  width: 90%;
+  height: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Languages,
+.Frameworks,
+.Skills {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.abouth3 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin: 0;
+  grid-column: 2/3;
+}
+
+.aboutme-List {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  justify-content: space-around;
+}
+
+.aboutme-List li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.div-Heads {
+  display: grid;
+  grid-template: 100% / 20% 60% 20%;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.div-Heads img {
+  grid-column: 1/2;
+  padding-left: 50%;
+}
+
+.div-Heads .skills-img {
+  padding-left: 100%;
+}
