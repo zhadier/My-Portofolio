@@ -171,6 +171,12 @@ body {
   color: #fff;
 }
 
+.tag-items {
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+
 .program-Link {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -181,6 +187,7 @@ body {
   background: rgba(255, 255, 255, 0.24);
   padding: 10px 12px 10px 12px;
   text-decoration: none;
+  float: inline-start;
 }
 
 .project-Button {
