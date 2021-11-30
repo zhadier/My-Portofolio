@@ -200,11 +200,6 @@ body {
   border: 0;
 }
 
-.project-Button:hover {
-  background-color: blueviolet;
-  border: 3px solid black;
-}
-
 .card ul {
   list-style: none;
   display: flex;
@@ -317,9 +312,22 @@ body {
   width: 170px;
 }
 
-.get-Resume-Button:hover {
-  background-color: blueviolet;
-  border: 3px solid black;
+button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+button:focus {
+  background-color: #e05304;
+  color: #f4f1f0;
+  border: none;
+}
+
+button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: none;
 }
 
 #AboutMe hr {
@@ -383,4 +391,142 @@ body {
 
 .div-Heads .skills-img {
   padding-left: 100%;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 2px 0;
+}
+
+.footer-head {
+  padding: 0 5% 0 5%;
+}
+
+.footer-head h3 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 0 5% 0 5%;
+}
+
+#form-button {
+  margin-left: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #ff6b00;
+  height: 48px;
+  border: 0;
+  width: 150px;
+  align-self: center;
+}
+
+#form-button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+#form-button:focus {
+  background-color: #e05304;
+  color: #f4f1f0;
+  border: none;
+}
+
+#form-button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: none;
+}
+
+input {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 5%;
+  margin-bottom: 20px;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+input::placeholder {
+  color: #979493;
+}
+
+textarea {
+  width: 90%;
+  height: 114px;
+  margin-bottom: 24px;
+  border: 0;
+  padding: 5%;
+  background: #fbf8f7;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #3c3a39;
+}
+
+textarea::placeholder {
+  color: #3c3a39;
+}
+
+footer hr.footer-end {
+  width: 40%;
+  height: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 2.5px solid #0d151e;
+  border-radius: 3px;
+  background-color: #0d151e;
+}
+
+footer hr.footer-social-network {
+  width: 100%;
+  height: 0;
+  margin-left: -24px;
+  margin-right: -24px;
+  border: 0.5px solid #dfe1e6;
+  margin-top: 140px;
+}
+
+.footer-Links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-Links li {
+  padding-right: 10px;
+  padding-left: 10px;
 }
