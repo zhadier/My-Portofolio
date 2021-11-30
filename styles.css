@@ -200,11 +200,6 @@ body {
   border: 0;
 }
 
-.project-Button:hover {
-  background-color: blueviolet;
-  border: 3px solid black;
-}
-
 .card ul {
   list-style: none;
   display: flex;
@@ -317,9 +312,22 @@ body {
   width: 170px;
 }
 
-.get-Resume-Button:hover {
-  background-color: blueviolet;
-  border: 3px solid black;
+button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+button:focus {
+  background-color: #e05304;
+  color: #f4f1f0;
+  border: none;
+}
+
+button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: none;
 }
 
 #AboutMe hr {
@@ -390,7 +398,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 5% 30px 5%;
+  padding: 80px 5% 2px 5%;
 }
 
 .footer-head h3 {
@@ -400,7 +408,7 @@ footer {
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .footer-form {
@@ -428,9 +436,27 @@ footer {
   align-self: center;
 }
 
+#form-button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+#form-button:focus {
+  background-color: #e05304;
+  color: #f4f1f0;
+  border: none;
+}
+
+#form-button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: none;
+}
+
 input {
   width: 90%;
-  border: 0px;
+  border: 0;
   border-bottom: 1px solid #dbd8d7;
   padding: 5%;
   margin-bottom: 20px;
@@ -439,23 +465,43 @@ input {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
+input::placeholder {
+  color: #979493;
+}
+
 textarea {
-  width: 100%;
+  width: 90%;
   height: 114px;
   margin-bottom: 24px;
+  border: 0;
+  padding: 5%;
+  background: #fbf8f7;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #3c3a39;
+}
+
+textarea::placeholder {
+  color: #3c3a39;
 }
 
 footer hr.footer-end {
-  width: 45%;
+  width: 40%;
   height: 0;
   margin-left: 5%;
   margin-right: 5%;
   border: 2.5px solid #0d151e;
   border-radius: 3px;
+  background-color: #0d151e;
 }
 
 footer hr.footer-social-network {
@@ -472,7 +518,7 @@ footer hr.footer-social-network {
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .footer-Links li {
