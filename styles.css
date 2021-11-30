@@ -406,6 +406,7 @@ footer {
 .footer-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 #form-button {
@@ -424,4 +425,47 @@ footer {
   height: 48px;
   border: 0;
   width: 150px;
+  align-self: center;
+}
+
+input {
+  width: 90%;
+  border: 0px;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 5%;
+  margin-bottom: 20px;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  height: 114px;
+  margin-bottom: 24px;
+}
+
+footer hr {
+  width: 45%;
+  height: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 2.5px solid #0d151e;
+  border-radius: 3px;
+}
+
+.footer-Links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.footer-Links li {
+  padding-right: 20px;
 }
