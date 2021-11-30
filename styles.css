@@ -449,13 +449,22 @@ textarea {
   margin-bottom: 24px;
 }
 
-footer hr {
+footer hr.footer-end {
   width: 45%;
   height: 0;
   margin-left: 5%;
   margin-right: 5%;
   border: 2.5px solid #0d151e;
   border-radius: 3px;
+}
+
+footer hr.footer-social-network {
+  width: 400px;
+  height: 0;
+  margin-left: -24px;
+  margin-right: -24px;
+  border: 0.5px solid #dfe1e6;
+  margin-top: 124px;
 }
 
 .footer-Links {
@@ -467,5 +476,6 @@ footer hr {
 }
 
 .footer-Links li {
-  padding-right: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
