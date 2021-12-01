@@ -72,7 +72,7 @@ body {
   justify-content: center;
   background: #1c1a19 url(images/Illustration-header.svg) 240px 180px no-repeat;
   background-size: 150% 100%;
-  
+
 }
 
 #headline .flex-Description {
@@ -139,6 +139,17 @@ body {
   align-items: center;
 }
 
+.works-Title {
+  display: flex;
+  flex-direction: column;
+}
+
+.works-Title hr {
+  width: 95%;
+  height: 0px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
 .works-Title h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -167,9 +178,13 @@ body {
   padding-bottom: 10px;
 }
 
+.project1 img {
+  padding-top: 70px;
+}
+
 .project-Head {
   display: flex;
-  padding: 60px 0 0 15px;
+  padding: 0 0 0 15px;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -555,13 +570,13 @@ footer hr.footer-social-network {
 }
 
 /* Design for Desktop Version */
-@media screen and (min-device-width:992px) {
+@media screen and (min-device-width:992px) and (max-device-width:1400px) {
 
   /* header */
-.flex-Header {
-  min-height: 72px;
-  padding: 0 calc(3% + 40px) 0 calc(3% + 90px);
-}
+  .flex-Header {
+    min-height: 72px;
+    padding: 0 calc(5% + 40px) 0 calc(3% + 90px);
+  }
 
   .nav-Button {
     display: none;
@@ -594,13 +609,13 @@ footer hr.footer-social-network {
 
   /* Headline Section */
   #headline {
-  flex-direction: row;
-  background: #1c1a19 url(images/Illustration-header-desktop.svg) right top no-repeat;
- background-size: contain;
- padding-top: 5%;
- padding-bottom: 5%;
- align-items: center;
- justify-content: flex-start;
+    flex-direction: row;
+    background: #1c1a19 url(images/Illustration-header-desktop.svg) right -40px bottom 70px no-repeat;
+    background-size: contain;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .headline-Heading {
@@ -633,7 +648,7 @@ footer hr.footer-social-network {
     line-height: 32px;
     letter-spacing: 0em;
     text-align: left;
-    color:#F4F5F7;
+    color: #F4F5F7;
   }
 
   .headline-Links {
@@ -646,18 +661,97 @@ footer hr.footer-social-network {
     padding: 0px;
   }
 
-  .headline-Links li {
-  padding: 10px 0 10px 0;
-  }
-
-  .headline-Links li img{
-    width: auto;
-    }
-
   #headline .flex-Description {
     order: 2;
-    padding-left:60px;
+    padding-left: 60px;
   }
 
+  .headline-Links li {
+    padding: 10px 0 10px 0;
+  }
 
+  .headline-Links li img {
+    width: auto;
+  }
+
+  /* Works Section */
+  #Works {
+    grid-template: 0.5fr 4fr 3fr 3fr / 1fr 1fr 1fr;
+    gap: 20px 20px;
+  }
+
+  .works-Title {
+    grid-area: 1 / 1 / span 1 / span 3;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-start;
+  }
+
+  .works-Title h2 {
+    color: #091E42;
+    width: 490px;
+    margin-bottom: 0px;
+    align-self: start;
+    text-align: left;
+  }
+
+  .works-Title hr {
+    border-bottom: 1px solid #835555;
+    width: 100%;
+  }
+
+  .project1.card {
+    grid-area: 2 / 1 / span 1 / span 3;
+    display: grid;
+    grid-template: 0.5fr 0.2fr 0.3fr 15%/ 60% 1fr;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 0px 40px;
+    padding-bottom: 0px;
+  }
+
+  .project1 h1 {
+    font-family: 'Crete Round', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  .project1 p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .project1 img {
+    width: 100%;
+    padding-top: 0px;
+    grid-area: 1 / 1 / span 4 / span 1;
+  }
+
+  /* AboutMe Section */
+  #AboutMe {
+    grid-template: 45% 2% 45% / 1fr 1fr 1fr;
+    gap: 8% 20px;
+    min-height: 1100px;
+  }
+
+  .aboutme-Head {
+    background: url("images/illustration-aboutme.svg") top 60px right -190px no-repeat;
+    background-size: contain;
+    grid-area: 1 / 1 /span 1 / span 3;
+  }
+
+  #AboutMe hr {
+    grid-area: 2/ 1 / span 1 / span 3;
+
+  }
 }
