@@ -4,7 +4,7 @@
 
 > A portofolio for Zeeshan Haider.
 
-![screenshot](https://user-images.githubusercontent.com/90556221/143334400-f9701887-0397-4e68-9291-8b0ad6e23073.png)
+![screenshot](https://user-images.githubusercontent.com/90556221/144428476-5b00c84a-b5e9-498c-b3c2-8052414a8ccb.png)
 
 The portofolio contains all my work experience and Projects.
 
