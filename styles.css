@@ -2,11 +2,6 @@ body {
   margin: 0;
 }
 
-button {
-  transition-property: background-color;
-  transition-duration: 3s;
-}
-
 /* Header Containing Nav Menu */
 .flex-Header {
   display: flex;
@@ -61,29 +56,20 @@ button {
   color: #fff;
   align-self: center;
   margin: 0;
-  -webkit-animation: logorotates 2.5s 2 alternate ease-in-out;
-  animation: logorotate 2.5s 2 alternate ease-in-out;
-}
-
-@-webkit-keyframes logorotate {
-  0% {
-    -webkit-transform: perspective(120px)
-  }
-
-  100% {
-    -webkit-transform: perspective(120px) rotateY(180deg)
-  }
+  animation: logorotate 20s infinite ease-in-out;
 }
 
 @keyframes logorotate {
-  0% {
-    transform: perspective(120px) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateY(0deg)
+  to {
+    color: white
   }
 
-  100% {
-    transform: perspective(120px) rotateY(360deg);
-    -webkit-transform: perspective(120px) rotateY(360deg);
+  50% {
+    color:#f55800;
+  }
+
+  from {
+    color: #fff;
   }
 }
 
@@ -381,7 +367,6 @@ button {
   height: 48px;
   border: 0;
   width: 170px;
-  transition: background-color 0.5s ease-out;
 }
 
 button:hover {
@@ -877,9 +862,6 @@ footer hr.footer-social-network {
 
   .aboutme-Head button {
     background-color: #f55800;
-    transition-property: background-color;
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
   }
 
   .aboutme-Head p {
