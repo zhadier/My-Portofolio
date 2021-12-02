@@ -170,6 +170,12 @@ body {
   min-height: 400px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -180,6 +186,7 @@ body {
 
 .project1 img {
   padding-top: 70px;
+  width: auto;
 }
 
 .project-Head {
@@ -299,7 +306,7 @@ body {
 #AboutMe {
   background-color: #1c1a19;
   display: grid;
-  grid-template: 2fr 0.5fr repeat(3, 1fr) /100%;
+  grid-template: 1.8fr 0.3fr repeat(3, 1fr) /100%;
   padding: 80px 0 60px 0;
 }
 
@@ -380,6 +387,11 @@ button:disabled {
 .Skills {
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 50px;
+}
+
+.Frameworks{
+  padding-top: 10px;
 }
 
 .abouth3 {
@@ -570,7 +582,7 @@ footer hr.footer-social-network {
 }
 
 /* Design for Desktop Version */
-@media screen and (min-device-width:992px) and (max-device-width:1400px) {
+@media screen and (min-device-width:992px) {
 
   /* header */
   .flex-Header {
@@ -676,8 +688,10 @@ footer hr.footer-social-network {
 
   /* Works Section */
   #Works {
-    grid-template: 0.5fr 4fr 3fr 3fr / 1fr 1fr 1fr;
+    grid-template: 1fr 4fr 4fr 4fr / 1fr 1fr 1fr;
     gap: 20px 20px;
+    padding-left: calc(3% + 90px);
+    padding-right: calc(3% + 90px);
   }
 
   .works-Title {
@@ -700,14 +714,37 @@ footer hr.footer-social-network {
     width: 100%;
   }
 
+  .card {
+    background-image: none;
+  }
+
+  .project-Head p {
+    font-size: 17px;
+
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  .project-Head h1 {
+    width: 80%;
+  }
+
+
   .project1.card {
     grid-area: 2 / 1 / span 1 / span 3;
     display: grid;
-    grid-template: 0.5fr 0.2fr 0.3fr 15%/ 60% 1fr;
+    grid-template: 2fr 0.15fr / fit-content(100%) 1fr;
     justify-content: flex-start;
     align-content: flex-start;
-    gap: 0px 40px;
+    gap: 0px 20px;
     padding-bottom: 0px;
+  }
+
+  .project1 .card-body {
+    justify-content: flex-start;
   }
 
   .project1 h1 {
@@ -734,13 +771,66 @@ footer hr.footer-social-network {
   .project1 img {
     width: 100%;
     padding-top: 0px;
-    grid-area: 1 / 1 / span 4 / span 1;
+    grid-area: 1 / 1 / span 2 / span 1;
+  }
+
+  .project2 {
+    background-image: url(images/p1d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid;
+  }
+
+  .project2 .project-Head {
+    display: none;
+  }
+
+  .project2 .program-Link {
+    display: none;
+  }
+
+  .project3 {
+    background-image: url(images/p2d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project4 {
+    background-image: url(images/p3d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project5 {
+    background-image: url(images/p4d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project6 {
+    background-image: url(images/p2d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project7 {
+    background-image: url(images/p3d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project-Button {
+    display: none;
+  }
+
+  .project2 .project-Button {
+    display: flex;
   }
 
   /* AboutMe Section */
   #AboutMe {
     grid-template: 45% 2% 45% / 1fr 1fr 1fr;
-    gap: 8% 20px;
+    gap: 5% 20px;
     min-height: 1100px;
   }
 
@@ -748,10 +838,79 @@ footer hr.footer-social-network {
     background: url("images/illustration-aboutme.svg") top 60px right -190px no-repeat;
     background-size: contain;
     grid-area: 1 / 1 /span 1 / span 3;
+    padding-left: calc(3% + 90px);
+    padding-right: calc(3% + 90px);
+  }
+
+  .aboutme-Head h1 {
+    color: #F55800;
+  }
+
+  .aboutme-Head button {
+    background-color: #F55800;
+  }
+
+  .aboutme-Head p {
+    width: 50%;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+
   }
 
   #AboutMe hr {
     grid-area: 2/ 1 / span 1 / span 3;
-
+    width: auto;
+    margin-left: calc(3% + 90px);
+    margin-right: calc(3% + 90px);
+    border-top: none;
   }
+
+  .Languages {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: calc(7% + 90px);
+    justify-self: left;
+  }
+
+  .Skills,.Frameworks {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: calc(4% + 90px);
+    justify-self: left;
+  }
+
+  .div-Heads {
+    display: grid;
+    grid-template: 100% / 15% 85%;
+    justify-content: flex-start;
+  }
+
+  .div-Heads img {
+    padding: 0px
+  }
+
+  .div-Heads h3 {
+    text-align: left;
+    justify-self: flex-start;
+  }
+
+  .div-Heads .skills-img {
+    padding-left: 0px;
+  }
+
+  .Skills h3 {
+    padding-left: 10px;
+  }
+
+  .aboutme-List li {
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+
+  .Languages h3 {
+    padding-left: 5px;
+  }
+
+
 }
