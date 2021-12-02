@@ -56,6 +56,30 @@ body {
   color: #fff;
   align-self: center;
   margin: 0;
+  -webkit-animation: logorotates 2.5s 2 alternate ease-in-out;
+  animation: logorotate 2.5s 2 alternate ease-in-out;
+}
+
+@-webkit-keyframes logorotate {
+  0% {
+    -webkit-transform: perspective(120px)
+  }
+
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg)
+  }
+}
+
+@keyframes logorotate {
+  0% {
+    transform: perspective(120px) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateY(0deg)
+  }
+
+  100% {
+    transform: perspective(120px) rotateY(360deg);
+    -webkit-transform: perspective(120px) rotateY(360deg);
+  }
 }
 
 /* Headline section */
@@ -580,6 +604,7 @@ footer hr.footer-social-network {
 
 /* Design for Desktop Version */
 @media screen and (min-device-width: 992px) {
+
   /* header */
   .flex-Header {
     min-height: 72px;
