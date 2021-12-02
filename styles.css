@@ -816,6 +816,12 @@ footer hr.footer-social-network {
     display: none;
   }
 
+  .project1 .project-Button {
+    display: flex;
+    background: #F55800;
+
+  }
+
   .project2 .project-Button {
     display: flex;
   }
