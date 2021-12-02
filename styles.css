@@ -431,7 +431,7 @@ button:disabled {
   gap: 0;
 }
 
-.div-Heads img {
+.li-icon-images {
   grid-column: 1/2;
   padding-left: 50%;
 }
