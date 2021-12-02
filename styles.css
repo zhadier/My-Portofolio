@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+button {
+  transition-property: background-color;
+  transition-duration: 3s;
+}
+
 /* Header Containing Nav Menu */
 .flex-Header {
   display: flex;
@@ -376,6 +381,7 @@ body {
   height: 48px;
   border: 0;
   width: 170px;
+  transition: background-color 0.5s ease-out;
 }
 
 button:hover {
@@ -871,6 +877,9 @@ footer hr.footer-social-network {
 
   .aboutme-Head button {
     background-color: #f55800;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
   }
 
   .aboutme-Head p {
