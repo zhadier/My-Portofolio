@@ -56,6 +56,21 @@ body {
   color: #fff;
   align-self: center;
   margin: 0;
+  animation: logorotate 20s infinite ease-in-out;
+}
+
+@keyframes logorotate {
+  to {
+    color: white
+  }
+
+  50% {
+    color:#f55800;
+  }
+
+  from {
+    color: #fff;
+  }
 }
 
 /* Headline section */
@@ -580,6 +595,7 @@ footer hr.footer-social-network {
 
 /* Design for Desktop Version */
 @media screen and (min-device-width: 992px) {
+
   /* header */
   .flex-Header {
     min-height: 72px;
