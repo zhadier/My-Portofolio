@@ -2,6 +2,28 @@ body {
   margin: 0;
 }
 
+button {
+  transition: background-color 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+button:focus {
+  background-color: #e05304;
+  color: #f4f1f0;
+  border: none;
+}
+
+button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: none;
+}
+
 /* Header Containing Nav Menu */
 .flex-Header {
   display: flex;
@@ -56,20 +78,23 @@ body {
   color: #fff;
   align-self: center;
   margin: 0;
-  animation: logorotate 20s infinite ease-in-out;
+  text-shadow:
+    0 0 10px #f55800,
+    0 0 1px #f55800,
+    0 0 10px #f55800,
+    0 0 20px #f55800,
+    0 0 30px #f55800,
+    0 0 40px #f55800;
+  animation: logocolor 4s infinite linear;
 }
 
-@keyframes logorotate {
+@keyframes logocolor {
   to {
-    color: white
-  }
-
-  50% {
-    color:#f55800;
+    filter: hue-rotate(360deg);
   }
 
   from {
-    color: #fff;
+    filter: hue-rotate(0deg);
   }
 }
 
@@ -120,6 +145,7 @@ body {
   font-family: 'Poppin', sans-serif;
   font-style: normal;
   font-weight: normal;
+  width: 98%;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
@@ -132,6 +158,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 75%;
+  max-width: 400px;
   list-style: none;
   color: white;
   justify-content: flex-start;
@@ -312,6 +339,22 @@ body {
 
 .project1 .project-Button {
   width: 120px;
+  min-width: 120px;
+  transition: width 0.5s ease-in, background-color 0.5s ease-in-out;
+}
+
+.project1 .project-Button:hover {
+  width: 40%;
+  background-color: #fff5e1;
+}
+
+.project1 .project-Button:focus {
+  width: 40%;
+  background-color: #e05304;
+}
+
+.project1 .project-Button:disabled {
+  background-color: #f4f1f0;
 }
 
 /* About Me Section */
@@ -367,24 +410,22 @@ body {
   height: 48px;
   border: 0;
   width: 170px;
+  min-width: 170px;
+  transition: width 0.5s ease-in, background-color 0.5s ease-in-out;
 }
 
-button:hover {
+.get-Resume-Button:hover {
+  width: 40%;
   background-color: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
 }
 
-button:focus {
+.get-Resume-Button:focus {
+  width: 40%;
   background-color: #e05304;
-  color: #f4f1f0;
-  border: none;
 }
 
-button:disabled {
+.get-Resume-Button:disabled {
   background-color: #f4f1f0;
-  color: #5b5957;
-  border: none;
 }
 
 #AboutMe hr {
@@ -417,6 +458,7 @@ button:disabled {
   color: #fff;
   margin: 0;
   grid-column: 2/3;
+  justify-self: center;
 }
 
 .aboutme-List {
@@ -440,19 +482,23 @@ button:disabled {
 
 .div-Heads {
   display: grid;
-  grid-template: 100% / 20% 60% 20%;
+  grid-template: 100% / 5% 230px 5%;
   align-items: center;
+  justify-items: flex-end;
   justify-content: center;
   gap: 0;
 }
 
-.li-icon-images {
-  grid-column: 1/2;
-  padding-left: 50%;
+.Skills .div-Heads {
+  grid-template: 100% / 5% 130px 5%;
 }
 
-.div-Heads .skills-img {
-  padding-left: 100%;
+.Languages .div-Heads {
+  grid-template: 100% / 5% 200px 5%;
+}
+
+.li-icon-images {
+  grid-column: 1/2;
 }
 
 /* footer */
@@ -595,7 +641,6 @@ footer hr.footer-social-network {
 
 /* Design for Desktop Version */
 @media screen and (min-device-width: 992px) {
-
   /* header */
   .flex-Header {
     min-height: 72px;
@@ -860,7 +905,7 @@ footer hr.footer-social-network {
     color: #f55800;
   }
 
-  .aboutme-Head button {
+  .get-Resume-Button {
     background-color: #f55800;
   }
 
@@ -900,8 +945,21 @@ footer hr.footer-social-network {
     justify-content: flex-start;
   }
 
+  .Languages .div-Heads {
+    display: grid;
+    grid-template: 100% / 15% 85%;
+    justify-content: flex-start;
+  }
+
+  .Skills .div-Heads {
+    display: grid;
+    grid-template: 100% / 15% 85%;
+    justify-content: flex-start;
+  }
+
   .li-icon-images {
     padding: 0;
+    justify-self: flex-start;
   }
 
   .div-Heads h3 {
@@ -991,4 +1049,97 @@ footer hr.footer-social-network {
     padding: 3%;
     height: 70px;
   }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 991px) {
+  #headline {
+    background: #1c1a19 url(images/Illustration-header-desktop.svg) right -40px bottom 70px no-repeat;
+    background-size: contain;
+  }
+
+  .headline-Text {
+    width: 70%;
+  }
+
+  .headline-Links {
+    max-width: 400px;
+  }
+
+  #Works {
+    grid-template: 0.25fr 1.4fr repeat(3, 0.8fr) / 1fr 1fr;
+    gap: 5px 3%;
+  }
+
+  .works-Title {
+    grid-area: 1 / 1 / span 1 / span 2;
+  }
+
+  .card {
+    background-image: none;
+  }
+
+  .project1.card {
+    grid-area: 2 / 1 / span 1 / span 2;
+    padding-bottom: 0;
+  }
+
+  .project2 {
+    background-image: url(images/p1d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+  }
+
+  .project2 .project-Head {
+    display: none;
+  }
+
+  .project2 .program-Link {
+    display: none;
+  }
+
+  .project3 {
+    background-image: url(images/p2d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project4 {
+    background-image: url(images/p3d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project5 {
+    background-image: url(images/p4d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project6 {
+    background-image: url(images/p2d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project7 {
+    background-image: url(images/p3d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project-Button {
+    display: none;
+  }
+
+  .project1 .project-Button {
+    display: flex;
+    background: #f55800;
+  }
+
+  .project2 .project-Button {
+    display: flex;
+  }
+
+  /* aboutme section for tablet */
 }
