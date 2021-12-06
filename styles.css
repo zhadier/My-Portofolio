@@ -120,6 +120,7 @@ body {
   font-family: 'Poppin', sans-serif;
   font-style: normal;
   font-weight: normal;
+  width: 98%;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
@@ -132,6 +133,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 75%;
+  max-width: 400px;
   list-style: none;
   color: white;
   justify-content: flex-start;
@@ -991,4 +993,96 @@ footer hr.footer-social-network {
     padding: 3%;
     height: 70px;
   }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width:991px) {
+  #headline {
+    background: #1c1a19 url(images/Illustration-header-desktop.svg) right -40px bottom 70px no-repeat;
+    background-size: contain;
+  }
+
+  .headline-Text{
+width: 70%;
+  }
+
+  .headline-Links {
+    max-width: 400px;
+  }
+
+  #Works {
+    grid-template: 0.25fr 1.4fr repeat(3, 0.8fr)  / 1fr 1fr;
+    gap: 5px 3%;
+  }
+
+  .works-Title {
+    grid-area: 1 / 1 / span 1 / span 2;
+  }
+
+  .card {
+    background-image: none;
+  }
+
+  .project1.card {
+    grid-area: 2 / 1 / span 1 / span 2;
+    padding-bottom: 0;
+  }
+
+  .project2 {
+    background-image: url(images/p1d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+  }
+
+  .project2 .project-Head {
+    display: none;
+  }
+
+  .project2 .program-Link {
+    display: none;
+  }
+
+  .project3 {
+    background-image: url(images/p2d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project4 {
+    background-image: url(images/p3d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project5 {
+    background-image: url(images/p4d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project6 {
+    background-image: url(images/p2d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project7 {
+    background-image: url(images/p3d.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project-Button {
+    display: none;
+  }
+
+  .project1 .project-Button {
+    display: flex;
+    background: #f55800;
+  }
+
+  .project2 .project-Button {
+    display: flex;
+  }
+ 
 }
