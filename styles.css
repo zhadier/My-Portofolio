@@ -78,23 +78,24 @@ button:disabled {
   color: #fff;
   align-self: center;
   margin: 0;
-  text-shadow:
-    0 0 10px #f55800,
-    0 0 1px #f55800,
-    0 0 10px #f55800,
-    0 0 20px #f55800,
-    0 0 30px #f55800,
-    0 0 40px #f55800;
-  animation: logocolor 4s infinite linear;
+  animation: logocolor 4s 1 linear;
 }
 
 @keyframes logocolor {
   to {
     filter: hue-rotate(360deg);
+    text-shadow: none;
   }
 
   from {
     filter: hue-rotate(0deg);
+    text-shadow:
+      0 0 10px #f55800,
+      0 0 1px #f55800,
+      0 0 10px #f55800,
+      0 0 20px #f55800,
+      0 0 30px #f55800,
+      0 0 40px #f55800;
   }
 }
 
@@ -235,7 +236,7 @@ button:disabled {
   justify-content: flex-start;
 }
 
-.project-Head h1 {
+.project-Head h3 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -305,7 +306,7 @@ button:disabled {
   padding-bottom: 5px;
 }
 
-.project1 h1 {
+.project1 h3 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -338,18 +339,17 @@ button:disabled {
 }
 
 .project1 .project-Button {
-  width: 120px;
   min-width: 120px;
   transition: width 0.5s ease-in, background-color 0.5s ease-in-out;
 }
 
 .project1 .project-Button:hover {
-  width: 40%;
+  min-width: 40%;
   background-color: #fff5e1;
 }
 
 .project1 .project-Button:focus {
-  width: 40%;
+  min-width: 40%;
   background-color: #e05304;
 }
 
@@ -373,7 +373,7 @@ button:disabled {
   padding-right: 5%;
 }
 
-.aboutme-Head h1 {
+.aboutme-Head h2 {
   margin-bottom: 0;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -407,7 +407,8 @@ button:disabled {
   letter-spacing: 0.03em;
   color: #fff;
   background-color: #ff6b00;
-  height: 48px;
+  min-height: 48px;
+  height: auto;
   border: 0;
   width: 170px;
   min-width: 170px;
@@ -513,7 +514,7 @@ footer {
   padding: 0 5% 0 5%;
 }
 
-.footer-head h3 {
+.footer-head h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -640,7 +641,7 @@ footer hr.footer-social-network {
 }
 
 /* Design for Desktop Version */
-@media screen and (min-device-width: 992px) {
+@media screen and (min-width: 992px) {
   /* header */
   .flex-Header {
     min-height: 72px;
@@ -783,7 +784,7 @@ footer hr.footer-social-network {
     text-align: left;
   }
 
-  .project-Head h1 {
+  .project-Head h3 {
     width: 80%;
   }
 
@@ -801,7 +802,7 @@ footer hr.footer-social-network {
     justify-content: flex-start;
   }
 
-  .project1 h1 {
+  .project1 h3 {
     font-family: 'Crete Round', sans-serif;
     font-size: 40px;
     font-style: normal;
@@ -901,7 +902,7 @@ footer hr.footer-social-network {
     padding-right: calc(3% + 90px);
   }
 
-  .aboutme-Head h1 {
+  .aboutme-Head h2 {
     color: #f55800;
   }
 
@@ -1000,7 +1001,7 @@ footer hr.footer-social-network {
     padding-left: calc(3% + 90px);
   }
 
-  .footer-head h3 {
+  .footer-head h2 {
     text-align: left;
     font-size: 40px;
     line-height: 52px;
@@ -1039,7 +1040,8 @@ footer hr.footer-social-network {
   #form-button {
     align-self: flex-start;
     background-color: #f55800;
-    height: 50px;
+    min-height: 50px;
+    height: auto;
     font-family: 'Roboto', sans-serif;
     width: 130px;
   }
@@ -1051,7 +1053,7 @@ footer hr.footer-social-network {
   }
 }
 
-@media screen and (min-device-width: 600px) and (max-device-width: 991px) {
+@media screen and (min-width: 600px) and (max-width: 991px) {
   #headline {
     background: #1c1a19 url(images/Illustration-header-desktop.svg) right -40px bottom 70px no-repeat;
     background-size: contain;
