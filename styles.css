@@ -78,23 +78,25 @@ button:disabled {
   color: #fff;
   align-self: center;
   margin: 0;
-  text-shadow:
+  animation: logocolor 4s 1 linear;
+}
+
+@keyframes logocolor {
+  to {
+    filter: hue-rotate(360deg);
+    text-shadow: none;
+  }
+
+  from {
+    filter: hue-rotate(0deg);
+    text-shadow:
     0 0 10px #f55800,
     0 0 1px #f55800,
     0 0 10px #f55800,
     0 0 20px #f55800,
     0 0 30px #f55800,
     0 0 40px #f55800;
-  animation: logocolor 4s infinite linear;
-}
-
-@keyframes logocolor {
-  to {
-    filter: hue-rotate(360deg);
-  }
-
-  from {
-    filter: hue-rotate(0deg);
+    ;
   }
 }
 
@@ -338,18 +340,17 @@ button:disabled {
 }
 
 .project1 .project-Button {
-  width: 120px;
   min-width: 120px;
   transition: width 0.5s ease-in, background-color 0.5s ease-in-out;
 }
 
 .project1 .project-Button:hover {
-  width: 40%;
+  min-width: 40%;
   background-color: #fff5e1;
 }
 
 .project1 .project-Button:focus {
-  width: 40%;
+  min-width: 40%;
   background-color: #e05304;
 }
 
@@ -407,7 +408,8 @@ button:disabled {
   letter-spacing: 0.03em;
   color: #fff;
   background-color: #ff6b00;
-  height: 48px;
+  min-height: 48px;
+  height: auto;
   border: 0;
   width: 170px;
   min-width: 170px;
@@ -1039,7 +1041,8 @@ footer hr.footer-social-network {
   #form-button {
     align-self: flex-start;
     background-color: #f55800;
-    height: 50px;
+    min-height: 50px;
+    height: auto;
     font-family: 'Roboto', sans-serif;
     width: 130px;
   }
