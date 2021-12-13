@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -26,9 +30,13 @@ button:disabled {
 
 /* Header Containing Nav Menu */
 .flex-Header {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   background: #3c3a39;
+  left: 0;
+  right: 0;
   padding: 0 7% 0 7%;
   min-height: 48px;
 }
@@ -42,11 +50,14 @@ button:disabled {
 .header-Nav .nav-Button {
   background-color: #3c3a39;
   border: 0;
-  border-radius: 8px;
 }
 
 .header-Nav .nav-Button:hover {
   background-color: black;
+}
+
+.nav-Button img {
+  margin: 5px 0 5px 0;
 }
 
 .nav-List {
@@ -99,9 +110,90 @@ button:disabled {
   }
 }
 
+/* Mobile Menu */
+
+.mobile-Menu {
+  background: #3c3a39;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  height: 100vh;
+  top: -200%;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  transition: 0.5s;
+}
+
+.nav-Button-Close {
+  align-self: flex-end;
+  background-color: inherit;
+  border: 1px none;
+  margin-top: 5px;
+  padding: 1px;
+  display: flex;
+  margin-right: 7%;
+  transition: 0s;
+}
+
+.nav-Button-Close:hover {
+  background-color: black;
+  border: 0;
+}
+
+.nav-Button-Close:focus {
+  background-color: inherit;
+}
+
+.nav-Menu-List {
+  list-style: none;
+  width: 85%;
+  padding: 7%;
+  margin: 0;
+}
+
+.nav-Menu-List li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 4%;
+  margin-bottom: 5px;
+}
+
+.nav-Menu-List a {
+  text-decoration: none;
+  color: #fff5e1;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.menu-End {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+  padding: 0;
+  height: 5%;
+  align-items: flex-end;
+  justify-items: center;
+}
+
+.menu-End hr {
+  border-top: 5px solid black;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+/* Mobile menu END */
+
 /* Headline section */
 #headline {
-  margin: -1px 0 0;
+  margin: 47px 0 0;
   min-height: 590px;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -340,16 +432,15 @@ button:disabled {
 
 .project1 .project-Button {
   min-width: 120px;
+  width: 30%;
   transition: width 0.5s ease-in, background-color 0.5s ease-in-out;
 }
 
 .project1 .project-Button:hover {
-  min-width: 40%;
   background-color: #fff5e1;
 }
 
 .project1 .project-Button:focus {
-  min-width: 40%;
   background-color: #e05304;
 }
 
