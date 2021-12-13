@@ -1,20 +1,19 @@
 // Mobile menu (Dynamic HTML)
 const openMenu = document.querySelector('.nav-Button');
-const closeMenu = document.querySelector('nav-Button-Close')
-const Menu = document.querySelector('.mobile-Menu');
+const closeMenu = document.querySelector('.nav-Button-Close');
+const menu = document.querySelector('.mobile-Menu');
+const menuLinks = document.querySelectorAll('.nav-Menu-List li');
 
 closeMenu.addEventListener('click', () => {
-   closeMenu.classList.toggle("is-active");
-    Menu.style.left = "-100%";
-})
-
-openMenu.addEventListener("click", () => {
-    openMenu.classList.toggle("is-active");
-    Menu.style.left = "0%";
+  menu.style.top = '-150%';
 });
 
-menuLinks.forEach((el) => {
-    el.addEventListener("click", () => {
-        mobileMenu.style.left = "-100%";
-    });
+openMenu.addEventListener('click', () => {
+  menu.style.top = '0%';
+});
+
+menuLinks.forEach((li) => {
+  li.addEventListener('click', () => {
+    menu.style.top = '-150%';
+  });
 });
