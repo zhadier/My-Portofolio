@@ -1,7 +1,6 @@
-
 // Works Section Dynamically Created
 const worksSection = document.querySelector('#Works');
-function creatProject (project) {
+function creatProject(project) {
   worksSection.innerHTML += `
   <article class="card ${project.name}">
   <img id="p1image" src="${project.featuredImage}" alt="${project.name} Image">
@@ -24,7 +23,8 @@ function creatProject (project) {
 const projectsArray = [
   {
     name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
     technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p1.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
@@ -33,7 +33,8 @@ const projectsArray = [
   },
   {
     name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
     technologies: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p1d.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
@@ -42,7 +43,8 @@ const projectsArray = [
   },
   {
     name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
     technologies: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p2d.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
@@ -51,7 +53,8 @@ const projectsArray = [
   },
   {
     name: 'Website Protfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
     technologies: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p3d.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
@@ -60,7 +63,8 @@ const projectsArray = [
   },
   {
     name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
     technologies: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/proj-img.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
@@ -69,7 +73,8 @@ const projectsArray = [
   },
   {
     name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
     technologies: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p2d.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
@@ -78,7 +83,8 @@ const projectsArray = [
   },
   {
     name: 'Website Protfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
     technologies: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p3d.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
@@ -86,7 +92,6 @@ const projectsArray = [
     class: 'project7',
   },
 ];
-
 
 // Mobile menu (Dynamic HTML)
 const openMenu = document.querySelector('.nav-Button');
