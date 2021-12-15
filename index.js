@@ -203,13 +203,20 @@ const errorMessage = footerForm.querySelector('button + span');
 
 function err(message) {
   errorMessage.textContent = message;
-  errorMessage.setAttribute('style', 'color: red; font-size: 10px;font-family: "Inter", sans-serif; ');
-  emailInput.setAttribute('style', 'border-bottom: 1px solid red; background: rgba(255, 0, 0, 0.2');
+  errorMessage.setAttribute(
+    'style',
+    'color: red; font-size: 15px;font-family: "Inter", sans-serif; '
+  );
+  emailInput.setAttribute(
+    'style',
+    'border solid red; background: rgba(255, 0, 0, 0.3'
+  );
   return false;
 }
 
 function succ() {
   errorMessage.textContent = '';
+  emailInput.setAttribute('style', ' border-bottom: 1px solid #DBD8D7;');
   return true;
 }
 
