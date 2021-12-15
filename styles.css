@@ -296,9 +296,6 @@ button:disabled {
 }
 
 .card {
-  background: url(images/proj-img.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -446,6 +443,163 @@ button:disabled {
 
 .project1 .project-Button:disabled {
   background-color: #f4f1f0;
+}
+
+/* Popup Section */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.backdrop {
+  padding: 5%;
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: 10;
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+}
+
+.popUp {
+  background-color: white;
+  padding: 4%;
+  display: grid;
+  grid-template: 60px 80px auto / 1fr;
+  align-items: center;
+  border: 1px #dfe1e6;
+}
+
+.popup-Name {
+  color: #172B4D;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0px;
+}
+
+#popup-Close {
+  align-self: center;
+  justify-content: flex-end;
+  border: 0px;
+  background-color: white;
+  font-size: 1.5rem;
+}
+
+.popup-List {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  gap: 10px;
+}
+
+.popup-List a {
+  text-decoration: none;
+  color: #3C3A39;
+  padding: 5px;
+  border: 1px solid #3C3A39;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.popup-Text {
+  color: #344563;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.popup-Image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.popup-Main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-Container {
+  height: 100%;
+}
+
+.popup-btn-group {
+  display: flex;
+  gap: 7px;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.popup-btn-group button {
+  margin-left: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #f55800;
+  height: 50px;
+  border: 0;
+  width: 155px;
+  align-self: center;
+}
+
+.popup-btn-group a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.popup-btn-group button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.popup-btn-group button:focus {
+  background-color: #e05304;
+  color: #f4f1f0;
+  border: none;
+}
+
+.popup-btn-group button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+  border: none;
+}
+
+.popup-btn-group a img {
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+
+.wrap {display: grid;
+  grid-template: 1fr 3fr / 1;
+
 }
 
 /* About Me Section */
@@ -733,6 +887,7 @@ footer hr.footer-social-network {
 
 /* Design for Desktop Version */
 @media screen and (min-width: 992px) {
+
   /* header */
   .flex-Header {
     min-height: 72px;
@@ -976,6 +1131,160 @@ footer hr.footer-social-network {
 
   .project2 .project-Button {
     display: flex;
+  }
+
+  /* Popup Section */
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .backdrop {
+    padding: 2% 2% 2% 2%;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 10;
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popUp {
+    background-color: white;
+    padding: 2%;
+    display: grid;
+    grid-template: 50px 50px auto/1fr;
+    max-width: 1050px;
+    max-height: 580px;
+  }
+
+  .popup-Name {
+    color: #172B4D;
+    font-family: 'Crete Round', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0px;
+  }
+
+  #popup-Close {
+    align-self: center;
+    justify-content: flex-end;
+    border: 0px;
+    background-color: white;
+    font-size: 1.5rem;
+  }
+
+  .popup-List {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .popup-List a {
+    text-decoration: none;
+    color: #3C3A39;
+    padding: 5px;
+    border: 1px solid #3C3A39;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+
+  .popup-Text {
+    color: #344563;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .popup-Image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .popup-Main {
+    max-width: 37%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-Container {
+    width: 60%;
+    height: 100%;
+  }
+
+  .popup-btn-group {
+    display: flex;
+    gap: 7px;
+    margin-top: auto;
+    margin-bottom: 15px;
+  }
+
+  .popup-btn-group button {
+    margin-left: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    background-color: #f55800;
+    height: 50px;
+    border: 0;
+    width: 155px;
+    align-self: center;
+  }
+
+  .popup-btn-group a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+  }
+
+  .popup-btn-group button:hover {
+    background-color: #fff5e1;
+    color: #f55800;
+    border: 1px solid #f55800;
+  }
+
+  .popup-btn-group button:focus {
+    background-color: #e05304;
+    color: #f4f1f0;
+    border: none;
+  }
+
+  .popup-btn-group button:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
+    border: none;
+  }
+
+  .popup-btn-group a img {
+    position: relative;
+    top: 3px;
+    left: 3px;
   }
 
   /* AboutMe Section */

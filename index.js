@@ -1,97 +1,181 @@
 // Works Section Dynamically Created
 const worksSection = document.querySelector('#Works');
-function creatProject(project) {
-  worksSection.innerHTML += `
-  <article class="card ${project.name}">
-  <img id="p1image" src="${project.featuredImage}" alt="${project.name} Image">
-  <div class="card-body">
-      <div class="project-Head">
-          <h3>${project.description}</h3>
-          <p></p>
-      </div>
-      <ul>
-          <li><a href="https://en.wikipedia.org/wiki/CSS" class="program-Link"></a></li>
-          <li><a href="https://en.wikipedia.org/wiki/HTML" class="program-Link"></a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
-                  class="program-Link"></a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Ruby" class="program-Link"></a></li>
-      </ul>
-      <button class="project-Button"></button>
-  </div>
-</article>`;
-}
 const projectsArray = [
   {
     name: 'Multi-Post Stories',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    techs: ['css', 'html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p1.svg',
+    featuredPopupImage: 'images/p1.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
     linkToSource: 'https://github.com/zhadier/My-Portofolio',
     class: 'project1',
+    id: 'but1',
   },
   {
     name: 'Profesional Art Printing Data',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
+    techs: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p1d.svg',
+    featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
     linkToSource: 'https://github.com/zhadier/My-Portofolio',
     class: 'project2',
+    id: 'but2',
   },
   {
     name: 'Data Dashboard Healthcare',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
+    techs: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p2d.svg',
+    featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
     linkToSource: 'https://github.com/zhadier/My-Portofolio',
     class: 'project3',
+    id: 'but3',
   },
   {
     name: 'Website Protfolio',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
+    techs: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p3d.svg',
+    featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
     linkToSource: 'https://github.com/zhadier/My-Portofolio',
     class: 'project4',
+    id: 'but4',
   },
   {
     name: 'Profesional Art Printing Data',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
+    techs: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/proj-img.svg',
+    featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
     linkToSource: 'https://github.com/zhadier/My-Portofolio',
     class: 'project5',
+    id: 'but5',
   },
   {
     name: 'Data Dashboard Healthcare',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
+    techs: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p2d.svg',
+    featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
     linkToSource: 'https://github.com/zhadier/My-Portofolio',
     class: 'project6',
+    id: 'but6',
   },
   {
     name: 'Website Protfolio',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
+    techs: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p3d.svg',
+    featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
     linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
     linkToSource: 'https://github.com/zhadier/My-Portofolio',
     class: 'project7',
+    id: 'but7',
   },
 ];
+
+function creatProject(project) {
+  worksSection.innerHTML += `
+  <article class="card ${project.class}">
+  <div class="card-body">
+      <div class="project-Head">
+          <h3>${project.name}</h3>
+          <p>${project.description}</p>
+      </div>
+      <ul>
+          <li><a href="https://en.wikipedia.org/wiki/HTML" class="program-Link">${project.techs[0]}</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+                  class="program-Link">${project.techs[1]}</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Ruby" class="program-Link">${project.techs[2]}</a></li>
+      </ul>
+      <button class="project-Button" id="${project.id}">See Project</button>
+  </div>
+</article>`;
+  if (project.class === 'project1') {
+    const project1 = document.querySelector('.project1');
+    const imgP1 = document.createElement('img');
+    imgP1.src = 'images/p1.svg';
+    imgP1.alt = 'Multi Post Stories Project Image';
+    imgP1.id = 'p1image';
+    project1.insertBefore(imgP1, project1.firstChild);
+    const project1tech = document.querySelector('.project1 ul');
+    project1tech.innerHTML = `<li><a href="https://en.wikipedia.org/wiki/CSS" class="program-Link">${project.techs[0]}</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/HTML" class="program-Link">${project.techs[1]}</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+            class="program-Link">${project.techs[2]}</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Ruby" class="program-Link">${project.techs[3]}</a></li>`;
+  } else {
+    document.querySelector(`.${project.class}`).setAttribute('style', `background: url(${project.featuredImage}); background-repeat: no-repeat; background-size: cover;`);
+  }
+}
+
+function createPopUp(project) {
+  div = document.createElement('div');
+  div.className = 'backdrop';
+  div.innerHTML += `<section class="popUp" data-role="popup">
+  <div class="container">
+      <h3 class="popup-Name">${project.name}</h3>
+      <button id="popup-Close" type="button">x</button>
+  </div>
+  <div class="container">
+      <ul class="popup-List">
+          <li>
+              <a href="#">${project.techs[0]}</a>
+          </li>
+          <li>
+              <a href="#">${project.techs[1]}</a>
+          </li>
+          <li>
+              <a href="#">${project.techs[2]}</a>
+          </li>
+      </ul>
+  </div>
+  <div class="container wrap">
+  <div class="img-Container">
+      <img src=${project.featuredPopupImage} class="popup-Image" alt="Project Image">
+      </div>
+      <div class="popup-Main">
+          <p class="popup-Text">${project.description}</p>
+          <div class="popup-btn-group">
+              <button><a href="${project.linkToLiveVersion}" class="live-Link"><span>See Live</span> <img
+                          src="images/Icon-seelive.svg" alt=""></a></button>
+              <button><a href="${project.linkToSource}" class="source-Link"><span>See Source</span> <img src="images/github-white.png"
+                          alt=""></a></button>
+          </div>
+      </div>
+  </div>
+</section>`;
+worksSection.appendChild(div);
+document.querySelector('#popup-Close').addEventListener('click', () => {
+  worksSection.removeChild(div);
+});
+}
+
+for (let i = 0; i < projectsArray.length; i++) {
+  creatProject(projectsArray[i]);
+}
+
+const PopUp1 = document.querySelector(`#${projectsArray[0].id}`);
+PopUp1.addEventListener('click', function() {createPopUp(projectsArray[0]);});
+const PopUp2 = document.querySelector(`#${projectsArray[1].id}`);
+PopUp2.addEventListener('click', function() {createPopUp(projectsArray[1]);});
+const PopUp3 = document.querySelector(`#${projectsArray[2].id}`);
+PopUp3.addEventListener('click', function() {createPopUp(projectsArray[2]);});
+const PopUp4 = document.querySelector(`#${projectsArray[3].id}`);
+PopUp4.addEventListener('click', function() {createPopUp(projectsArray[3]);});
+const PopUp5 = document.querySelector(`#${projectsArray[4].id}`);
+PopUp5.addEventListener('click', function() {createPopUp(projectsArray[4]);});
+const PopUp6 = document.querySelector(`#${projectsArray[5].id}`);
+PopUp6.addEventListener('click', function() {createPopUp(projectsArray[5]);});
+const PopUp7 = document.querySelector(`#${projectsArray[6].id}`);
+PopUp7.addEventListener('click', function() {createPopUp(projectsArray[6]);});
+
 
 // Mobile menu (Dynamic HTML)
 const openMenu = document.querySelector('.nav-Button');
