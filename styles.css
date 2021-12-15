@@ -473,45 +473,44 @@ button:disabled {
 }
 
 .popup-Name {
-  color: #172B4D;
+  color: #172b4d;
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  margin: 0px;
+  margin: 0;
 }
 
 #popup-Close {
   align-self: center;
   justify-content: flex-end;
-  border: 0px;
+  border: 0;
   background-color: white;
   font-size: 1.5rem;
 }
 
 .popup-List {
   list-style: none;
-  padding: 0px;
+  padding: 0;
   display: flex;
   gap: 10px;
 }
 
 .popup-List a {
   text-decoration: none;
-  color: #3C3A39;
+  color: #3c3a39;
   padding: 5px;
-  border: 1px solid #3C3A39;
+  border: 1px solid #3c3a39;
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-
 }
 
 .popup-Text {
@@ -521,7 +520,7 @@ button:disabled {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
@@ -597,9 +596,9 @@ button:disabled {
   left: 3px;
 }
 
-.wrap {display: grid;
-  grid-template: 1fr 3fr / 1;
-
+.wrap {
+  display: grid;
+  grid-template: 1fr 3fr / 1fr;
 }
 
 /* About Me Section */
@@ -887,7 +886,6 @@ footer hr.footer-social-network {
 
 /* Design for Desktop Version */
 @media screen and (min-width: 992px) {
-
   /* header */
   .flex-Header {
     min-height: 72px;
@@ -1161,45 +1159,44 @@ footer hr.footer-social-network {
   }
 
   .popup-Name {
-    color: #172B4D;
+    color: #172b4d;
     font-family: 'Crete Round', sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
-    margin: 0px;
+    margin: 0;
   }
 
   #popup-Close {
     align-self: center;
     justify-content: flex-end;
-    border: 0px;
+    border: 0;
     background-color: white;
     font-size: 1.5rem;
   }
 
   .popup-List {
     list-style: none;
-    padding: 0px;
+    padding: 0;
     display: flex;
     gap: 10px;
   }
 
   .popup-List a {
     text-decoration: none;
-    color: #3C3A39;
+    color: #3c3a39;
     padding: 5px;
-    border: 1px solid #3C3A39;
+    border: 1px solid #3c3a39;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
-
   }
 
   .popup-Text {
@@ -1209,7 +1206,7 @@ footer hr.footer-social-network {
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
   }
 

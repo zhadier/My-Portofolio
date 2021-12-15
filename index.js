@@ -116,7 +116,7 @@ function creatProject(project) {
 }
 
 function createPopUp(project) {
-  div = document.createElement('div');
+  const div = document.createElement('div');
   div.className = 'backdrop';
   div.innerHTML += `<section class="popUp" data-role="popup">
   <div class="container">
@@ -151,31 +151,30 @@ function createPopUp(project) {
       </div>
   </div>
 </section>`;
-worksSection.appendChild(div);
-document.querySelector('#popup-Close').addEventListener('click', () => {
-  worksSection.removeChild(div);
-});
+  worksSection.appendChild(div);
+  document.querySelector('#popup-Close').addEventListener('click', () => {
+    worksSection.removeChild(div);
+  });
 }
 
-for (let i = 0; i < projectsArray.length; i++) {
+for (let i = 0; i < projectsArray.length; i += 1) {
   creatProject(projectsArray[i]);
 }
 
 const PopUp1 = document.querySelector(`#${projectsArray[0].id}`);
-PopUp1.addEventListener('click', function() {createPopUp(projectsArray[0]);});
+PopUp1.addEventListener('click', () => { createPopUp(projectsArray[0]); });
 const PopUp2 = document.querySelector(`#${projectsArray[1].id}`);
-PopUp2.addEventListener('click', function() {createPopUp(projectsArray[1]);});
+PopUp2.addEventListener('click', () => { createPopUp(projectsArray[1]); });
 const PopUp3 = document.querySelector(`#${projectsArray[2].id}`);
-PopUp3.addEventListener('click', function() {createPopUp(projectsArray[2]);});
+PopUp3.addEventListener('click', () => { createPopUp(projectsArray[2]); });
 const PopUp4 = document.querySelector(`#${projectsArray[3].id}`);
-PopUp4.addEventListener('click', function() {createPopUp(projectsArray[3]);});
+PopUp4.addEventListener('click', () => { createPopUp(projectsArray[3]); });
 const PopUp5 = document.querySelector(`#${projectsArray[4].id}`);
-PopUp5.addEventListener('click', function() {createPopUp(projectsArray[4]);});
+PopUp5.addEventListener('click', () => { createPopUp(projectsArray[4]); });
 const PopUp6 = document.querySelector(`#${projectsArray[5].id}`);
-PopUp6.addEventListener('click', function() {createPopUp(projectsArray[5]);});
+PopUp6.addEventListener('click', () => { createPopUp(projectsArray[5]); });
 const PopUp7 = document.querySelector(`#${projectsArray[6].id}`);
-PopUp7.addEventListener('click', function() {createPopUp(projectsArray[6]);});
-
+PopUp7.addEventListener('click', () => { createPopUp(projectsArray[6]); });
 
 // Mobile menu (Dynamic HTML)
 const openMenu = document.querySelector('.nav-Button');
