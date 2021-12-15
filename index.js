@@ -195,3 +195,36 @@ menuLinks.forEach((li) => {
     menu.style.top = '-150%';
   });
 });
+
+// Form Validation
+const footerForm = document.querySelector('.footer-form');
+const emailInput = footerForm.querySelector('#email');
+const errorMessage = footerForm.querySelector('button + span');
+
+function err(message) {
+  errorMessage.textContent = message;
+  errorMessage.setAttribute('style', 'color: red; font-size: 10px;font-family: "Inter", sans-serif; ');
+  emailInput.setAttribute('style', 'border-bottom: 1px solid red; background: rgba(255, 0, 0, 0.2');
+  return false;
+}
+
+function succ() {
+  errorMessage.textContent = '';
+  return true;
+}
+
+function validateLowerCase(input, errorMsg) {
+  if (input.value.trim() === '') {
+    return err('Please input required details');
+  }
+  if (input.value !== input.value.toLowerCase()) {
+    return err(errorMsg);
+  }
+  return succ();
+}
+
+footerForm.addEventListener('submit', (event) => {
+  if (!validateLowerCase(emailInput, 'Please make sure email field is lower case.')) {
+    event.preventDefault();
+  }
+});
