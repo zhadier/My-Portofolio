@@ -229,3 +229,16 @@ footerForm.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+// Local Storage
+// using the same global variable for form defined in form validation called footer form.
+
+let userName = footerForm.querySelector('#name');
+let userEmail = footerForm.querySelector('#email');
+let userMessage = footerForm.querySelector('#msg');
+
+function storeFormData() {
+  localStorage.setItem('user', JSON.stringify({ name: userName.value, email: userEmail.value, text: userMessage.value }));
+}
+
+footerForm.addEventListener('focusout', storeFormData());
