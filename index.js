@@ -229,3 +229,21 @@ footerForm.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+// Local Storage
+// using the same global variable for form defined in form validation called footer form.
+
+const userName = footerForm.querySelector('#name');
+const userEmail = footerForm.querySelector('#email');
+const userMessage = footerForm.querySelector('#msg');
+
+function populateStorage() {
+  localStorage.setItem('userDet', JSON.stringify({ username: userName.value, useremail: userEmail.value, usermsg: userMessage.value }));
+}
+
+footerForm.addEventListener('focusout', () => { populateStorage(); });
+
+const userDet = JSON.parse(localStorage.getItem('userDet'));
+userName.value = userDet.username;
+userEmail.value = userDet.useremail;
+userMessage.value = userDet.usermsg;
