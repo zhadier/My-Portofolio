@@ -242,8 +242,3 @@ function populateStorage() {
 }
 
 footerForm.addEventListener('focusout', () => { populateStorage(); });
-
-const userDet = JSON.parse(localStorage.getItem('userDet'));
-userName.value = userDet.username;
-userEmail.value = userDet.useremail;
-userMessage.value = userDet.usermsg;
