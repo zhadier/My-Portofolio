@@ -39,6 +39,7 @@ button:disabled {
   right: 0;
   padding: 0 7% 0 7%;
   min-height: 48px;
+  z-index: 1;
 }
 
 .flex-Header .header-Nav {
@@ -302,6 +303,11 @@ button:disabled {
   justify-content: flex-end;
 }
 
+.card:hover {
+  transform: scale(1.08);
+  border: 1px groove;
+}
+
 .card-body {
   display: flex;
   flex-direction: column;
@@ -311,6 +317,11 @@ button:disabled {
 .project1 {
   background-image: none;
   padding-bottom: 10px;
+}
+
+.project1.card:hover {
+  transform: none;
+  border: none;
 }
 
 .project1 img {
@@ -1019,6 +1030,11 @@ footer hr.footer-social-network {
     background-image: none;
   }
 
+  .card:hover {
+    transform: scale(1.1);
+    border: 1px solid;
+  }
+
   .project-Head p {
     font-size: 17px;
     font-weight: 400;
@@ -1472,13 +1488,19 @@ footer hr.footer-social-network {
     grid-area: 1 / 1 / span 1 / span 2;
   }
 
-  .card {
-    background-image: none;
+  .card:hover {
+    transform: scale(1.1);
+    overflow: hidden;
   }
 
   .project1.card {
     grid-area: 2 / 1 / span 1 / span 2;
     padding-bottom: 0;
+  }
+
+  .project1.card:hover {
+    transform: none;
+    border: none;
   }
 
   .project2 {
