@@ -101,13 +101,8 @@ button:disabled {
 
   from {
     filter: hue-rotate(0deg);
-    text-shadow:
-      0 0 10px #f55800,
-      0 0 1px #f55800,
-      0 0 10px #f55800,
-      0 0 20px #f55800,
-      0 0 30px #f55800,
-      0 0 40px #f55800;
+    text-shadow: 0 0 10px #f55800, 0 0 1px #f55800, 0 0 10px #f55800, 0 0 20px #f55800,
+      0 0 30px #f55800, 0 0 40px #f55800;
   }
 }
 
@@ -327,6 +322,7 @@ button:disabled {
 .project1 img {
   padding-top: 70px;
   width: auto;
+  max-width: 700px;
 }
 
 .project-Head {
@@ -615,14 +611,14 @@ button:disabled {
 #AboutMe {
   background-color: #1c1a19;
   display: grid;
-  grid-template: 1.8fr 0.3fr repeat(3, 1fr) /100%;
+  grid-template: 1.8fr 0.3fr repeat(3, 1fr) / 100%;
   padding: 80px 0 60px 0;
 }
 
 .aboutme-Head {
   display: flex;
   flex-direction: column;
-  background: url("images/aboutMe-BG.svg") right bottom no-repeat;
+  background: url('images/aboutMe-BG.svg') right bottom no-repeat;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -1307,9 +1303,9 @@ footer hr.footer-social-network {
   }
 
   .aboutme-Head {
-    background: url("images/illustration-aboutme.svg") top 60px right -190px no-repeat;
+    background: url('images/illustration-aboutme.svg') top 60px right -190px no-repeat;
     background-size: contain;
-    grid-area: 1 / 1 /span 1 / span 3;
+    grid-area: 1 / 1 / span 1 / span 3;
     padding-left: calc(3% + 90px);
     padding-right: calc(3% + 90px);
   }
@@ -1408,7 +1404,7 @@ footer hr.footer-social-network {
   }
 
   .footer-head {
-    grid-area: 1 /1 /span 1 /span 1;
+    grid-area: 1 /1 / span 1 / span 1;
     padding: 0;
     padding-left: calc(3% + 90px);
   }
@@ -1428,13 +1424,13 @@ footer hr.footer-social-network {
 
   .footer-form {
     width: calc(97% - 90px);
-    grid-area: 1 / 2 / span 1 /span 1;
+    grid-area: 1 / 2 / span 1 / span 1;
     padding: 0;
     padding-right: calc(3% + 90px);
   }
 
   .footer-Links {
-    grid-area: 2 / 1 /span 1 /span 2;
+    grid-area: 2 / 1 / span 1 / span 2;
     padding-top: 20px;
     border-top: 1px solid #dfe1e6;
   }

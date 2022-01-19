@@ -2,52 +2,57 @@
 const worksSection = document.querySelector('#Works');
 const projectsArray = [
   {
-    name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    techs: ['css', 'html', 'Bootstrap', 'Ruby'],
-    featuredImage: 'images/p1.svg',
-    featuredPopupImage: 'images/p1.svg',
-    linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
-    linkToSource: 'https://github.com/zhadier/My-Portofolio',
+    name: 'EME Olympiad Webpage',
+    description:
+      'This webpage is based on an annual event held in my University called EME Olympiad, which is basically an extravaganza of concerts, sport events, arts and so on.',
+    techs: ['css', 'html', 'Bootstrap', 'JavaScript'],
+    featuredImage: 'images/ss/emeOlympiad.png',
+    featuredPopupImage: 'images/ss/emeOlympiad.png',
+    linkToLiveVersion: 'https://zhadier.github.io/Eme-Olympiad/',
+    linkToSource: 'https://github.com/zhadier/Eme-Olympiad',
     class: 'project1',
     id: 'but1',
   },
   {
-    name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    techs: ['html', 'Bootstrap', 'Ruby'],
-    featuredImage: 'images/p1d.svg',
-    featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
-    linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
-    linkToSource: 'https://github.com/zhadier/My-Portofolio',
+    name: 'Awesome Books',
+    description:
+      'A simple webpage where you can store all the books you have read or want to read. Made using HTML, CSS and JavaScript.',
+    techs: ['html', 'css', 'JavasScript'],
+    featuredImage: 'images/ss/Awesome.png',
+    featuredPopupImage: 'images/ss/Awesome.png',
+    linkToLiveVersion: 'https://zhadier.github.io/Awesome-Books-ES6/',
+    linkToSource: 'https://github.com/zhadier/Awesome-Books-ES6',
     class: 'project2',
     id: 'but2',
   },
   {
-    name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    techs: ['html', 'Bootstrap', 'Ruby'],
-    featuredImage: 'images/p2d.svg',
-    featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
-    linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
-    linkToSource: 'https://github.com/zhadier/My-Portofolio',
+    name: 'To Do List',
+    description:
+      'A simple to do list webpage where you can log the daily tasks you have to do, mark them as checked, modify them, reorder them and remove them. Made using HTML, CSS and JavaScript.',
+    techs: ['html', 'css', 'javaScript'],
+    featuredImage: 'images/ss/to-do-List.png',
+    featuredPopupImage: 'images/ss/to-do-List.png',
+    linkToLiveVersion: 'https://zhadier.github.io/To-Do-List',
+    linkToSource: 'https://github.com/zhadier/To-Do-List',
     class: 'project3',
     id: 'but3',
   },
   {
-    name: 'Website Protfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
-    techs: ['html', 'Bootstrap', 'Ruby'],
-    featuredImage: 'images/p3d.svg',
-    featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
-    linkToLiveVersion: 'https://zhadier.github.io/My-Portofolio/',
-    linkToSource: 'https://github.com/zhadier/My-Portofolio',
+    name: 'Dice Challenge',
+    description:
+      'A simple dice game where you test your luck to decide the winner. Created using JavaScript, html and CSS',
+    techs: ['html', 'css', 'JavaScript'],
+    featuredImage: 'images/ss/dice.png',
+    featuredPopupImage: 'images/ss/dice.png',
+    linkToLiveVersion: 'https://zhadier.github.io/Dicee-Challenge',
+    linkToSource: 'https://github.com/zhadier/Dicee-Challenge',
     class: 'project4',
     id: 'but4',
   },
   {
     name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
     techs: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/proj-img.svg',
     featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
@@ -58,7 +63,8 @@ const projectsArray = [
   },
   {
     name: 'Data Dashboard Healthcare',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
     techs: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p2d.svg',
     featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
@@ -69,7 +75,8 @@ const projectsArray = [
   },
   {
     name: 'Website Protfolio',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard.',
     techs: ['html', 'Bootstrap', 'Ruby'],
     featuredImage: 'images/p3d.svg',
     featuredPopupImage: 'images/Snapshoot-Portfolio.svg',
@@ -100,7 +107,7 @@ function creatProject(project) {
   if (project.class === 'project1') {
     const project1 = document.querySelector('.project1');
     const imgP1 = document.createElement('img');
-    imgP1.src = 'images/p1.svg';
+    imgP1.src = project.featuredImage;
     imgP1.alt = 'Multi Post Stories Project Image';
     imgP1.id = 'p1image';
     project1.insertBefore(imgP1, project1.firstChild);
@@ -111,7 +118,12 @@ function creatProject(project) {
             class="program-Link">${project.techs[2]}</a></li>
     <li><a href="https://en.wikipedia.org/wiki/Ruby" class="program-Link">${project.techs[3]}</a></li>`;
   } else {
-    document.querySelector(`.${project.class}`).setAttribute('style', `background: url(${project.featuredImage}); background-repeat: no-repeat; background-size: cover;`);
+    document
+      .querySelector(`.${project.class}`)
+      .setAttribute(
+        'style',
+        `background: url(${project.featuredImage}) center; background-repeat: no-repeat; background-size: cover;`,
+      );
   }
 }
 
@@ -162,19 +174,33 @@ for (let i = 0; i < projectsArray.length; i += 1) {
 }
 
 const PopUp1 = document.querySelector(`#${projectsArray[0].id}`);
-PopUp1.addEventListener('click', () => { createPopUp(projectsArray[0]); });
+PopUp1.addEventListener('click', () => {
+  createPopUp(projectsArray[0]);
+});
 const PopUp2 = document.querySelector(`#${projectsArray[1].id}`);
-PopUp2.addEventListener('click', () => { createPopUp(projectsArray[1]); });
+PopUp2.addEventListener('click', () => {
+  createPopUp(projectsArray[1]);
+});
 const PopUp3 = document.querySelector(`#${projectsArray[2].id}`);
-PopUp3.addEventListener('click', () => { createPopUp(projectsArray[2]); });
+PopUp3.addEventListener('click', () => {
+  createPopUp(projectsArray[2]);
+});
 const PopUp4 = document.querySelector(`#${projectsArray[3].id}`);
-PopUp4.addEventListener('click', () => { createPopUp(projectsArray[3]); });
+PopUp4.addEventListener('click', () => {
+  createPopUp(projectsArray[3]);
+});
 const PopUp5 = document.querySelector(`#${projectsArray[4].id}`);
-PopUp5.addEventListener('click', () => { createPopUp(projectsArray[4]); });
+PopUp5.addEventListener('click', () => {
+  createPopUp(projectsArray[4]);
+});
 const PopUp6 = document.querySelector(`#${projectsArray[5].id}`);
-PopUp6.addEventListener('click', () => { createPopUp(projectsArray[5]); });
+PopUp6.addEventListener('click', () => {
+  createPopUp(projectsArray[5]);
+});
 const PopUp7 = document.querySelector(`#${projectsArray[6].id}`);
-PopUp7.addEventListener('click', () => { createPopUp(projectsArray[6]); });
+PopUp7.addEventListener('click', () => {
+  createPopUp(projectsArray[6]);
+});
 
 // Mobile menu (Dynamic HTML)
 const openMenu = document.querySelector('.nav-Button');
@@ -203,8 +229,14 @@ const errorMessage = footerForm.querySelector('button + span');
 
 function err(message) {
   errorMessage.textContent = message;
-  errorMessage.setAttribute('style', 'color: red; font-size: 15px;font-family: "Inter", sans-serif; ');
-  emailInput.setAttribute('style', 'border-bottom: 2px solid red; background: rgba(255, 0, 0, 0.1);');
+  errorMessage.setAttribute(
+    'style',
+    'color: red; font-size: 15px;font-family: "Inter", sans-serif; ',
+  );
+  emailInput.setAttribute(
+    'style',
+    'border-bottom: 2px solid red; background: rgba(255, 0, 0, 0.1);',
+  );
   return false;
 }
 
@@ -238,10 +270,19 @@ const userEmail = footerForm.querySelector('#email');
 const userMessage = footerForm.querySelector('#msg');
 
 function populateStorage() {
-  localStorage.setItem('userDet', JSON.stringify({ username: userName.value, useremail: userEmail.value, usermsg: userMessage.value }));
+  localStorage.setItem(
+    'userDet',
+    JSON.stringify({
+      username: userName.value,
+      useremail: userEmail.value,
+      usermsg: userMessage.value,
+    }),
+  );
 }
 
-footerForm.addEventListener('focusout', () => { populateStorage(); });
+footerForm.addEventListener('focusout', () => {
+  populateStorage();
+});
 
 const userDet = JSON.parse(localStorage.getItem('userDet'));
 userName.value = userDet.username;
