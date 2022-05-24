@@ -28,7 +28,7 @@ Use the link below to access github page for my portofolio.
 
 - Clone this repo locally using git in the command line and the following command
 
-  git clone https://github.com/zhadier/My-Portofolio
+  `git clone https://github.com/zhadier/My-Portofolio`
   
 - Alternatively, you can just download the complete zip file and extract the folder in your directory
 
